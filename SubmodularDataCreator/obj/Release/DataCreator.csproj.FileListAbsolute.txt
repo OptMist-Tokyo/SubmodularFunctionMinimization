@@ -1,0 +1,12 @@
+C:\Users\onigiri\Dropbox\SubmodularFunction\SubmodularDataCreator\bin\Release\SubmodularDataSet.exe.config
+C:\Users\onigiri\Dropbox\SubmodularFunction\SubmodularDataCreator\obj\Release\SubmodularDataSet.exe
+C:\Users\onigiri\Dropbox\SubmodularFunction\SubmodularDataCreator\obj\Release\SubmodularDataSet.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\SubmodularDataCreator\bin\Release\SubmodularDataSet.exe
+C:\Users\onigiri\Dropbox\SubmodularFunction\SubmodularDataCreator\bin\Release\SubmodularDataSet.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\SubmodularDataCreator\bin\Release\MathParserTK.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\SubmodularDataCreator\obj\Release\DataCreator.csprojResolveAssemblyReference.cache
+C:\Users\onigiri\Dropbox\SubmodularFunction\SubmodularDataCreator\obj\Release\SubmodularDataSet.DataCreatorForm.resources
+C:\Users\onigiri\Dropbox\SubmodularFunction\SubmodularDataCreator\obj\Release\SubmodularDataSet.DataCreator.resources
+C:\Users\onigiri\Dropbox\SubmodularFunction\SubmodularDataCreator\obj\Release\SubmodularDataSet.RangeForm.resources
+C:\Users\onigiri\Dropbox\SubmodularFunction\SubmodularDataCreator\obj\Release\SubmodularDataSet.ValueForm.resources
+C:\Users\onigiri\Dropbox\SubmodularFunction\SubmodularDataCreator\obj\Release\DataCreator.csproj.GenerateResource.Cache

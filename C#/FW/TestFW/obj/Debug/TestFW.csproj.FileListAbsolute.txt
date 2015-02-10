@@ -1,0 +1,7 @@
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\TestFW\bin\Debug\Onigiri.TestFW.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\TestFW\bin\Debug\Onigiri.TestFW.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\TestFW\bin\Debug\Onigiri.FW.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\TestFW\bin\Debug\Onigiri.FW.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\TestFW\obj\Debug\Onigiri.TestFW.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\TestFW\obj\Debug\Onigiri.TestFW.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\TestFW\obj\Debug\TestFW.csprojResolveAssemblyReference.cache

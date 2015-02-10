@@ -1,0 +1,5 @@
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\bin\Debug\Onigiri.Submodular.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\bin\Debug\Onigiri.Submodular.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\obj\Debug\Onigiri.Submodular.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\obj\Debug\Onigiri.Submodular.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\obj\Debug\Onigiri.Submodular.csprojResolveAssemblyReference.cache

@@ -1,0 +1,7 @@
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\bin\Release\Onigiri.Submodular.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\bin\Release\Onigiri.Submodular.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\bin\Release\Onigiri.Algorithm.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\obj\Release\Onigiri.Submodular.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\obj\Release\Onigiri.Submodular.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\obj\Release\SubmodularFunction.csprojResolveAssemblyReference.cache
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\bin\Release\Onigiri.Algorithm.dll

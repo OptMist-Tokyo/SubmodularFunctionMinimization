@@ -1,0 +1,13 @@
+C:\Users\onigiri\Dropbox\Me\SubmodularFunctionMinimization\SubmodularDataSet\bin\Debug\SubmodularDataSet.exe.config
+C:\Users\onigiri\Dropbox\Me\SubmodularFunctionMinimization\SubmodularDataSet\bin\Debug\SubmodularDataSet.exe
+C:\Users\onigiri\Dropbox\Me\SubmodularFunctionMinimization\SubmodularDataSet\bin\Debug\SubmodularDataSet.pdb
+C:\Users\onigiri\Dropbox\Me\SubmodularFunctionMinimization\SubmodularDataSet\obj\Debug\SubmodularDataSet.csprojResolveAssemblyReference.cache
+C:\Users\onigiri\Dropbox\Me\SubmodularFunctionMinimization\SubmodularDataSet\obj\Debug\SubmodularDataSet.exe
+C:\Users\onigiri\Dropbox\Me\SubmodularFunctionMinimization\SubmodularDataSet\obj\Debug\SubmodularDataSet.pdb
+C:\Users\onigiri\Dropbox\Me\SubmodularFunctionMinimization\SubmodularDataSet\obj\Debug\SubmodularDataSet.csproj.GenerateResource.Cache
+C:\Users\onigiri\Dropbox\Me\SubmodularFunctionMinimization\SubmodularDataSet\obj\Debug\SubmodularDataSet.DataCreatorForm.resources
+C:\Users\onigiri\Dropbox\Me\SubmodularFunctionMinimization\SubmodularDataSet\obj\Debug\SubmodularDataSet.DataCreator.resources
+C:\Users\onigiri\Dropbox\Me\SubmodularFunctionMinimization\SubmodularDataSet\obj\Debug\SubmodularDataSet.RangeForm.resources
+C:\Users\onigiri\Dropbox\Me\SubmodularFunctionMinimization\SubmodularDataSet\obj\Debug\SubmodularDataSet.ValueForm.resources
+C:\Users\onigiri\Dropbox\Me\SubmodularFunctionMinimization\SubmodularDataSet\bin\Debug\MathParserTK.dll
+C:\Users\onigiri\Dropbox\Me\SubmodularFunctionMinimization\SubmodularDataSet\bin\Debug\MathParserTK.pdb

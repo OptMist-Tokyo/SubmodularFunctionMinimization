@@ -1,0 +1,10 @@
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\bin\Debug\Onigiri.Submodular.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\bin\Debug\Onigiri.Submodular.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\obj\Debug\SubmodularFunction.csprojResolveAssemblyReference.cache
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\obj\Debug\Onigiri.Submodular.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\obj\Debug\Onigiri.Submodular.pdb
+C:\Users\user1\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\obj\Debug\SubmodularFunction.csprojResolveAssemblyReference.cache
+C:\Users\user1\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\obj\Debug\Onigiri.Submodular.dll
+C:\Users\user1\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\obj\Debug\Onigiri.Submodular.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\bin\Debug\Onigiri.Algorithm.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SubmodularFunction\Submodular\bin\Debug\Onigiri.Algorithm.pdb

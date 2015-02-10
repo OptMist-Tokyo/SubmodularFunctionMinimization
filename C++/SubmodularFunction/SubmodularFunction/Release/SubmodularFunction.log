@@ -1,0 +1,33 @@
+﻿2014/10/14 14:00:45 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\SubmodularFunction\SubmodularFunction.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D SUBMODULARFUNCTION_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt SetCoverConcave.cpp
+         SetCoverConcave.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\SubmodularFunction.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\SubmodularFunction.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\SubmodularFunction.lib" /MACHINE:X86 /SAFESEH /DLL Release\BinaryMatrixRank.obj
+         Release\BruteForce.obj
+         Release\ConnectedDetachment.obj
+         Release\Converter.obj
+         Release\Cut.obj
+         Release\DirectedCut.obj
+         Release\FacilityLocation.obj
+         Release\GraphicMatroid.obj
+         Release\Manual.obj
+         Release\Modular.obj
+         Release\NonPositiveSymmetricMatrixSummation.obj
+         Release\SetCover.obj
+         Release\SetCoverConcave.obj
+         Release\SFMResult.obj
+         Release\SubmodularFunctionMinimization.obj
+         Release\SubmodularOracle.obj
+         Release\UndirectedCut.obj
+         Release\UnionFind.obj
+            ライブラリ C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\SubmodularFunction.lib とオブジェクト C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\SubmodularFunction.exp を作成中
+         コード生成しています。
+         コード生成が終了しました。
+         SubmodularFunction.vcxproj -> C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\SubmodularFunction.dll
+     1>プロジェクト "C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\SubmodularFunction\SubmodularFunction.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:01.46

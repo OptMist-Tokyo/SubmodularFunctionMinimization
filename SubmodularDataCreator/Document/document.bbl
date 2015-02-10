@@ -1,0 +1,47 @@
+\begin{thebibliography}{1}
+
+\bibitem{bennett}
+K.~P. Bennett and E.~J. Bredensteiner.
+\newblock Duality and geometry in {{SVM}} classifiers.
+\newblock In {\em Proceedings of the 17th International Conference on Machine
+  Learning}, pages 57--64. Morgan Kaufmann, 2000.
+
+\bibitem{libsvm}
+C.~C. Chang and C.~J. Lin.
+\newblock {LIBSVM}: A library for support vector machines.
+\newblock Technical report, 2011.
+\newblock Software available at \url{http://www.csie.ntu.edu.tw/~cjlin/libsvm}.
+
+\bibitem{crisp}
+D.~J. Crisp and C.~J.~C. Burges.
+\newblock A geometric interpretation of $\nu$-{{SVM}} classifiers.
+\newblock In {\em Advances in Neural Information Processing Systems}. MIT
+  Press, Cambridge, MA, 2000.
+
+\bibitem{liblinear}
+R.~E. Fan, K.~W. Chang, C.~J. Hsieh, X.~R. Wang, and C.~J. Lin.
+\newblock {LIBLINEAR}: A library for large linear classification.
+\newblock {\em Journal of Machine Learning Research}, 9:1871--1874, 2008.
+
+\bibitem{nash85}
+C.~St. J.~A. Nash-Williams.
+\newblock Connected detachments of graphs and generalized euler trails.
+\newblock {\em J. London Math. Soc., year =}.
+
+\bibitem{scholkopf}
+B.~Sch{\"o}lkopf, A.~J. Smola, R.~C. Williamson, and P.~L. Bartlett.
+\newblock New support vector algorithms.
+\newblock {\em Neural Computation}, 12:1207--1245, 2000.
+
+\bibitem{sideris}
+A.~Sideris and S.~E. Castella.
+\newblock A proximity algorithm for support vector machine classification.
+\newblock In {\em Proceedings of the 44th IEEE Conference on Decision and
+  Control}, 2005.
+
+\bibitem{wolfe}
+P.~Wolfe.
+\newblock Finding the nearest point in a polytope.
+\newblock {\em Mathematical Programming}, 11:128--149, 1976.
+
+\end{thebibliography}

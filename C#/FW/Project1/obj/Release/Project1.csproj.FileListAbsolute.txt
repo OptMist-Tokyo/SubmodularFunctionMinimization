@@ -1,0 +1,10 @@
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\Project1\bin\Release\Project1.exe.config
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\Project1\bin\Release\Project1.exe
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\Project1\bin\Release\Project1.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\Project1\bin\Release\Onigiri.FW.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\Project1\bin\Release\Onigiri.TestFW.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\Project1\bin\Release\Onigiri.FW.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\Project1\bin\Release\Onigiri.TestFW.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\Project1\obj\Release\Project1.csprojResolveAssemblyReference.cache
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\Project1\obj\Release\Project1.exe
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\Project1\obj\Release\Project1.pdb

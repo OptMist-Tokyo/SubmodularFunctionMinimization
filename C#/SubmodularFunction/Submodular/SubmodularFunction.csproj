@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9FF1CE2C-6E97-4F7E-916A-7B0FD6EAC316}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Onigiri.Submodular</RootNamespace>
+    <AssemblyName>Onigiri.Submodular</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BinaryMatrixRank.cs" />
+    <Compile Include="BruteForce.cs" />
+    <Compile Include="ConnectedDetachment.cs" />
+    <Compile Include="ContractOracle.cs" />
+    <Compile Include="ConvexComponent.cs" />
+    <Compile Include="ConvexComponents.cs" />
+    <Compile Include="Cut.cs" />
+    <Compile Include="DataForContract.cs" />
+    <Compile Include="DirectedCut.cs" />
+    <Compile Include="FacilityLocation.cs" />
+    <Compile Include="IOStrongly.cs" />
+    <Compile Include="OriginalFW.cs" />
+    <Compile Include="Orlin.cs" />
+    <Compile Include="QRDecomposition.cs" />
+    <Compile Include="ScalingAlgorithm.cs" />
+    <Compile Include="FW.cs" />
+    <Compile Include="GraphicMatroid.cs" />
+    <Compile Include="Hybrid.cs" />
+    <Compile Include="HybridStrongly.cs" />
+    <Compile Include="HybridWeakly.cs" />
+    <Compile Include="IFF.cs" />
+    <Compile Include="IFFStrongly.cs" />
+    <Compile Include="IFFWeakly.cs" />
+    <Compile Include="IO.cs" />
+    <Compile Include="IOWeakly.cs" />
+    <Compile Include="Manual.cs" />
+    <Compile Include="Modular.cs" />
+    <Compile Include="NonPositiveSymmetricMatrixSummation.cs" />
+    <Compile Include="OracleWithOperation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReducedOracle.cs" />
+    <Compile Include="Schrijver.cs" />
+    <Compile Include="SetCover.cs" />
+    <Compile Include="SFMResult.cs" />
+    <Compile Include="SubmodularLinearOptimization.cs" />
+    <Compile Include="SubmodularOracle.cs" />
+    <Compile Include="SubmodularFunctionMinimization.cs" />
+    <Compile Include="UndirectedCut.cs" />
+    <Compile Include="UnionFind.cs" />
+    <Compile Include="SetCoverConcave.cs" />
+    <Compile Include="KyFan.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Onigiri.Algorithm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Library\Onigiri.Algorithm\Onigiri.Algorithm\bin\Release\Onigiri.Algorithm.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

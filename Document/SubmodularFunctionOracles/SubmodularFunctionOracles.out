@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section.1}{Introductions}{}% 1
+\BOOKMARK [1][-]{section.2}{How to Use Submodular Function Oracle}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Submodular Function Oracle: Base Class}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Submodular Function Oracles: Derived Class}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{How to Use Submodular Function Minimization Algorithms}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Submodular Function Minimization}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{SFMResult Class}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{How to develop Submodular Function Oracle}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Constructor}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{CalcValue\(\)}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{CalcBase\(\)}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.4}{destructor}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{How to develop Submodular Function Minimization Algorithms}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Minimization\(\)}{section.5}% 14

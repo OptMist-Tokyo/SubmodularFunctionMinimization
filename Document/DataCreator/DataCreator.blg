@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/W32TeX)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: DataCreator.aux
+The style file: plain.bst
+Database file #1: document.bib.bib
+I was expecting a `,' or a `}'---line 191 of file document.bib.bib
+ :   
+ :   pages =  "1985--1996"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 345 of file document.bib.bib
+ :   year =   "
+ :             1985",
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 487 of file document.bib.bib
+ :   pages =  "48"
+ :                f
+I'm skipping whatever remains of this entry
+Warning--empty year in nash85
+You've used 1 entry,
+            2118 wiz_defined-function locations,
+            501 strings with 4127 characters,
+and the built_in function-call counts, 225 in all, are:
+= -- 19
+> -- 7
+< -- 0
++ -- 3
+- -- 2
+* -- 12
+:= -- 47
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 10
+empty$ -- 18
+format.name$ -- 2
+if$ -- 41
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 8
+num.names$ -- 2
+pop$ -- 6
+preamble$ -- 1
+purify$ -- 3
+quote$ -- 0
+skip$ -- 6
+stack$ -- 0
+substring$ -- 5
+swap$ -- 1
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 4
+warning$ -- 1
+while$ -- 2
+width$ -- 2
+write$ -- 11
+(There were 3 error messages)

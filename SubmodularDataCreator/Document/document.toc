@@ -1,0 +1,21 @@
+\contentsline {section}{\numberline {1}Introductions}{3}{section.1}
+\contentsline {section}{\numberline {2}Common Usage of Left Side}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Path}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Number}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Type}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Execute and Save}{4}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Save}{4}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Text Box}{4}{subsection.2.6}
+\contentsline {section}{\numberline {3}Common Usage of Right Side}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Range Blank}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Value Blank}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Use Variable in a Blank}{5}{subsection.3.3}
+\contentsline {section}{\numberline {4}All}{6}{section.4}
+\contentsline {section}{\numberline {5}Undirected Cut}{7}{section.5}
+\contentsline {section}{\numberline {6}Directed Cut}{8}{section.6}
+\contentsline {section}{\numberline {7}Connected Detachment}{9}{section.7}
+\contentsline {section}{\numberline {8}Facility Location}{11}{section.8}
+\contentsline {section}{\numberline {9}Graphic Matroid}{12}{section.9}
+\contentsline {section}{\numberline {10}Binary Matrix Rank}{14}{section.10}
+\contentsline {section}{\numberline {11}Negative Symmetric Matrix Summation}{15}{section.11}
+\contentsline {section}{\numberline {12}Set Cover}{16}{section.12}
