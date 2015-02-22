@@ -1,0 +1,10 @@
+C:\Users\onigiri\Dropbox\SubmodularFunction\SFM\SFM\bin\Debug\SFM.exe.config
+C:\Users\onigiri\Dropbox\SubmodularFunction\SFM\SFM\obj\Debug\SFM.csprojResolveAssemblyReference.cache
+C:\Users\onigiri\Dropbox\SubmodularFunction\SFM\SFM\bin\Debug\SFM.exe
+C:\Users\onigiri\Dropbox\SubmodularFunction\SFM\SFM\bin\Debug\SFM.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\SFM\SFM\bin\Debug\Onigiri.Algorithm.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\SFM\SFM\bin\Debug\Onigiri.Submodular.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\SFM\SFM\bin\Debug\Onigiri.Algorithm.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\SFM\SFM\bin\Debug\Onigiri.Submodular.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\SFM\SFM\obj\Debug\SFM.exe
+C:\Users\onigiri\Dropbox\SubmodularFunction\SFM\SFM\obj\Debug\SFM.pdb

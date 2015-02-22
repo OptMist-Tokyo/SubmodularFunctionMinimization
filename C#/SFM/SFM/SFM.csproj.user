@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartArguments>-o 0 -a 0 -f "E:\Submodular\DataInteger\UndirectedCut\8_0" -r "C:\Users\onigiri\Desktop\testtest.txt"</StartArguments>
+  </PropertyGroup>
+</Project>
