@@ -1,0 +1,131 @@
+% Template for ICASSP-2010 paper; to be used with:
+%          mlspconf.sty  - ICASSP/ICIP LaTeX style file adapted for MLSP, and
+%          IEEEbib.bst - IEEE bibliography style file.
+% --------------------------------------------------------------------------
+\documentclass{article}
+\bibliographystyle{plain}
+
+% use Times
+\usepackage{times}
+% For figures
+\usepackage{graphicx} % more modern
+%\usepackage{epsfig} % less modern
+\usepackage{subfigure} 
+% For algorithms
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+% As of 2011, we use the hyperref package to produce hyperlinks in the
+% resulting PDF.  If this breaks your system, please commend out the
+% following usepackage line and replace \usepackage{icml2014} with
+% \usepackage[nohyperref]{icml2014} above.
+\usepackage{hyperref}
+
+% Packages hyperref and algorithmic misbehave sometimes.  We can fix
+% this with the following command.
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+\usepackage{color}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newtheorem{theo}{Theorem}
+\newtheorem{prop}[theo]{Proposition}
+\newtheorem{lemm}[theo]{Lemma}
+\newtheorem{prof}[theo]{Proof}
+\renewcommand{\theprof}{}
+
+  
+\DeclareMathOperator{\rch}{RCH_\eta}
+\DeclareMathOperator{\ch}{CH}
+\DeclareMathOperator{\argmin}{argmin}
+\DeclareMathOperator{\argmax}{argmax}
+\newcommand{\re}{\mathbb{R}}
+\newcommand{\na}{\mathbb{N}}
+\newcommand{\rand}{{\rm Random}}
+\newcommand{\randre}{{\rm RandomReal}}
+\newcommand{\red}{\mathbb{R}^d}
+\newcommand{\bi}{\left\lbrace -1,1 \right\rbrace}
+\newcommand{\m}{{\rm minimize}}
+\newcommand{\M}{{\rm maximize}}
+\newcommand{\st}{{\rm subject~ to}}
+\newcommand{\ms}{R_\ominus}
+\newcommand{\me}{E_\ominus }
+\newcommand{\aff}{{\rm aff} }
+
+
+%\address{
+\begin{document}
+%\fontsize{9pt}{10.8pt}\selectfont
+\fontsize{10pt}{12pt}\selectfont
+%\ninept
+%
+
+\title{How to Use SFM }
+\author{onigiri}
+\date{\today}
+
+
+\maketitle
+\newpage
+
+
+\tableofcontents
+
+\newpage
+
+\section{Options}
+We need to set some options in order to execute SFM.exe.
+
+\subsection{Oracle}
+We can set a submodular function oracle by "-o" option.
+\begin{itemize}
+\item 0: Undirected Cut
+\item 1: Directed Cut
+\item 2: Connected Detachment
+\item 3: Facility Location
+\item 4: Graphic Matroid
+\item 5: Set Cover
+\item 6: Non Positive Symmetric Matrix Summation
+\item 7: Binary Matroid
+\end{itemize}
+
+See "Document\\DataCreator\\DataCreator.pdf" for details.
+
+\subsection{Submodular Functions}
+We can set an algorithm for submodular function minimization by "-a" option.
+\begin{itemize}
+\item 0: Iwata-Fleischer-Fujishige weakly polynomial time algorithm
+\item 1: Iwata-Fleischer-Fujishige Strongly polynomial time algorithm
+\item 2: Schrijver's algorithm
+\item 3: Iwata's hybrid weakly polynomial time algorithm
+\item 4: Iwata's hybrid strongly polynomial time algorithm
+\item 5: Orlin's algorithm
+\item 6: Iwata-Orlin weakly polynomial time algorithm
+\item 7: Iwata-Orlin strongly polynomial time algorithm
+\item 8: Fujishige-Wolfe algorithm
+\end{itemize}
+
+\subsection{Input File}
+We can set the file for the input data by "-f" option.
+See "Document\\DataCreator\\DataCreator.pdf" for the format of input data.
+
+\subsection{Output File}
+We can set the file for writing output by "-r" option.
+
+
+\subsection{Numerical Error Tolerance}
+We can set the numerical error tolerance by "-e" option.
+We do not need to set this value and in that case,
+the tolerance is $10^{-10}$.
+Note that if we use severe error tolerance or non-integer submodular function,
+it is possible for the program to take huge time.
+
+
+
+
+
+
+
+\end{document} 
