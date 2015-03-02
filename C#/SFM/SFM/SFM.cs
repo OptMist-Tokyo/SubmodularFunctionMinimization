@@ -68,7 +68,7 @@ namespace SFM
             }
             else if (index==7)
             {
-                return new BinaryMatrixRank(path);
+                return new BinaryMatroid(path);
             }
             else
             {

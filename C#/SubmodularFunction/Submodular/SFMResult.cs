@@ -8,8 +8,10 @@ using System.Threading.Tasks;
 
 namespace Onigiri.Submodular
 {
+
     public class SFMResult
     {
+
         const int OutputLength = 20;
         SubmodularOracle oracle;
         //Stopwatch timer;
@@ -17,6 +19,21 @@ namespace Onigiri.Submodular
         //long memoBaseCallTime;  //for calculation
         //long memoReductionTime; //for calculation
         double[] x;
+
+        string[] labels = new string[]{"N", 
+            "reduced N", 
+            "Iteration", 
+            "Execurtion Time", 
+            "Oracle Time",
+            "Reduction Time", 
+            "Oracle Call", 
+            "Base Call", 
+            "Reduction Call", 
+            "Minimum Value", 
+            "Minimizer", 
+            "Dual Value", 
+            };
+
 
         internal SFMResult(SubmodularOracle oracle)
         {
@@ -26,9 +43,29 @@ namespace Onigiri.Submodular
             //timer.Start();
         }
 
+        private void WriteLable(string path)
+        {
+            if (File.Exists(path))
+            {
+                return;
+            }
+            var sw = new StreamWriter(path,false);
+            for (int i = 0; i < labels.Length; i++)
+            {
+                if (i != 0)
+                {
+                    sw.Write('\t');
+                }
+                sw.Write(labels[i]);
+            }
+            sw.WriteLine();
+            sw.Close();
+        }
+
         public void Output(string path,bool withX = true)
         {
             StreamWriter streamWriter;
+            WriteLable(path);
             while (true)
             {
                 try { streamWriter = new StreamWriter(path,true); }

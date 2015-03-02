@@ -102,7 +102,7 @@ namespace Onigiri.TestSubmodular
             {
                 var methodName = MethodBase.GetCurrentMethod().Name.Split(new char[] { '<', '>' }, StringSplitOptions.RemoveEmptyEntries)[0];
                 var path = Const.DataPrefix + methodName.Substring(numSubstring) + @"\" + n + "_" + k;
-                var func = new Submodular.BinaryMatrixRank(path);
+                var func = new Submodular.BinaryMatroid(path);
                 func.TestGetBase(order);
             };
             TestGetBase(action);

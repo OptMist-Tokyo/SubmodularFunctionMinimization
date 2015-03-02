@@ -39,44 +39,44 @@ namespace Onigiri.Submodular
 
        public override object GetInitialBase(double[] b)
        {
-           var path = @"E:\seed.txt";
-           var sr = new System.IO.StreamReader(path);
-           var tmp = int.Parse(sr.ReadLine());
-           sr.Close();
-           var sw = new System.IO.StreamWriter(path);
-           sw.WriteLine((tmp + 1) % 25);
-           sw.Close();
-           var seq = RandomSequence(b.Length, tmp);
-           for (int i = 0; i < seq.Length; i++)
-           {
-               b[i] = seq[i];
-           }
+           //var path = @"E:\seed.txt";
+           //var sr = new System.IO.StreamReader(path);
+           //var tmp = int.Parse(sr.ReadLine());
+           //sr.Close();
+           //var sw = new System.IO.StreamWriter(path);
+           //sw.WriteLine((tmp + 1) % 25);
+           //sw.Close();
+           //var seq = RandomSequence(b.Length, tmp);
+           //for (int i = 0; i < seq.Length; i++)
+           //{
+           //    b[i] = seq[i];
+           //}
 
            return CalcLinearMinimizer(copy, b);
        }
 
-       /// <summary>
-       /// 長さ n の乱数列の生成
-       /// 配列の中身は 0 ～ n-1 までの自然数
-       /// O( n )
-       /// </summary>
-       /// <param name="n">配列の長さ</param>
-       /// <param name="seed">乱数のシード</param>
-       /// <returns>長さ n の乱数列</returns>
-       public static int[] RandomSequence(int n, int seed)
-       {
-           Random random = new Random(seed);
-           int[] seq = new int[n];
+       ///// <summary>
+       ///// 長さ n の乱数列の生成
+       ///// 配列の中身は 0 ～ n-1 までの自然数
+       ///// O( n )
+       ///// </summary>
+       ///// <param name="n">配列の長さ</param>
+       ///// <param name="seed">乱数のシード</param>
+       ///// <returns>長さ n の乱数列</returns>
+       //public static int[] RandomSequence(int n, int seed)
+       //{
+       //    Random random = new Random(seed);
+       //    int[] seq = new int[n];
 
-           int pos;
-           for (int i = 0; i < n; i++)
-           {
-               pos = random.Next(i + 1);
-               seq[i] = seq[pos];
-               seq[pos] = i;
-           }
-           return seq;
-       }//RandomSequence
+       //    int pos;
+       //    for (int i = 0; i < n; i++)
+       //    {
+       //        pos = random.Next(i + 1);
+       //        seq[i] = seq[pos];
+       //        seq[pos] = i;
+       //    }
+       //    return seq;
+       //}//RandomSequence
 
         public void Resize(int n)
         {

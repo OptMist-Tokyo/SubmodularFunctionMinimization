@@ -33,7 +33,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="BinaryMatrixRank.cs" />
+    <Compile Include="BinaryMatroid.cs" />
     <Compile Include="BruteForce.cs" />
     <Compile Include="ConnectedDetachment.cs" />
     <Compile Include="ContractOracle.cs" />

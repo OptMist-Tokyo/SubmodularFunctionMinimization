@@ -24,7 +24,7 @@ namespace Onigiri.TestSubmodular
             //SetCover,
             //SetCoverConcave,
             //NonPositiveSymmetricMatrixSummation,
-            BinaryMatrixRank,
+            BinaryMatroid,
         };
 
         internal enum Algorithms
@@ -45,19 +45,6 @@ namespace Onigiri.TestSubmodular
 
         };
 
-        string[] labels = new string[]{"N", 
-            "reduced N", 
-            "Iteration", 
-            "Execurtion Time", 
-            "Oracle Time",
-            "Reduction Time", 
-            "Oracle Call", 
-            "Base Call", 
-            "Reduction Call", 
-            "Minimum Value", 
-            "Minimizer", 
-            "Dual Value", 
-            };
 
         //const int nMin =128;
         //const int nMax = 200;
@@ -81,17 +68,6 @@ namespace Onigiri.TestSubmodular
                 {
                     string o =  oracleName.ToString();
                     var path = directly + @"\" + o + "_" + algoName.ToString() + ".txt";
-                    var sw = new StreamWriter(path);
-                    for (int i = 0; i < labels.Length; i++)
-                    {
-                        if (i!=0)
-                        {
-                            sw.Write('\t');
-                        }
-                        sw.Write(labels[i]);
-                    }
-                    sw.WriteLine();
-                    sw.Close();
                     var range = (pow ? Pow(nMin, nMax) : Range(nMin, nMax));
                     foreach (int n in range)
                     {

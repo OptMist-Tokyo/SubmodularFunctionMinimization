@@ -158,18 +158,18 @@ namespace Onigiri.Submodular
 
         protected void SetFirstComponents(List<int[]> firstOrders)
         {
-            var path = @"E:\seed.txt";
-            var sr = new System.IO.StreamReader(path);
-            var tmp = int.Parse(sr.ReadLine());
-            sr.Close();
-            var sw = new System.IO.StreamWriter(path);
-            sw.WriteLine((tmp + 1) % 25);
-            sw.Close();
-            var seq = RandomSequence(firstOrders[0].Length, tmp);
-            for (int i = 0; i < seq.Length; i++)
-            {
-                firstOrders[0][i] = seq[i];
-            }
+            //var path = @"E:\seed.txt";
+            //var sr = new System.IO.StreamReader(path);
+            //var tmp = int.Parse(sr.ReadLine());
+            //sr.Close();
+            //var sw = new System.IO.StreamWriter(path);
+            //sw.WriteLine((tmp + 1) % 25);
+            //sw.Close();
+            //var seq = RandomSequence(firstOrders[0].Length, tmp);
+            //for (int i = 0; i < seq.Length; i++)
+            //{
+            //    firstOrders[0][i] = seq[i];
+            //}
 
 
             foreach (var order in firstOrders)
@@ -185,28 +185,28 @@ namespace Onigiri.Submodular
             }//foreach order
         }
 
-        /// <summary>
-        /// 長さ n の乱数列の生成
-        /// 配列の中身は 0 ～ n-1 までの自然数
-        /// O( n )
-        /// </summary>
-        /// <param name="n">配列の長さ</param>
-        /// <param name="seed">乱数のシード</param>
-        /// <returns>長さ n の乱数列</returns>
-        public static int[] RandomSequence(int n, int seed)
-        {
-            Random random = new Random(seed);
-            int[] seq = new int[n];
+        ///// <summary>
+        ///// 長さ n の乱数列の生成
+        ///// 配列の中身は 0 ～ n-1 までの自然数
+        ///// O( n )
+        ///// </summary>
+        ///// <param name="n">配列の長さ</param>
+        ///// <param name="seed">乱数のシード</param>
+        ///// <returns>長さ n の乱数列</returns>
+        //public static int[] RandomSequence(int n, int seed)
+        //{
+        //    Random random = new Random(seed);
+        //    int[] seq = new int[n];
 
-            int pos;
-            for (int i = 0; i < n; i++)
-            {
-                pos = random.Next(i + 1);
-                seq[i] = seq[pos];
-                seq[pos] = i;
-            }
-            return seq;
-        }//RandomSequence
+        //    int pos;
+        //    for (int i = 0; i < n; i++)
+        //    {
+        //        pos = random.Next(i + 1);
+        //        seq[i] = seq[pos];
+        //        seq[pos] = i;
+        //    }
+        //    return seq;
+        //}//RandomSequence
 
          protected double GetMinimumValue(string minimizer)
          {
