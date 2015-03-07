@@ -18,7 +18,7 @@ namespace SFM
         public void Solve(string[] args)
         {
             var index = GetIndex(args, "-a");
-            double error = GetValue(args, "-e");
+            double error = GetValue(args, "-e",1e-10);
             var path = GetPath(args, "-r");
             if (index<=7)
             {
@@ -95,6 +95,12 @@ namespace SFM
             {
                 return new BinaryMatroid(path);
             }
+            else if (index==8)
+            {
+                double alpha = GetValue( args,  "-p", 0.75);
+                double c = GetValue(args, "-c", 10.0);
+                return new SetCoverConcave(path,alpha,c);
+            }
             else
             {
                 Console.WriteLine("Please set the index of oracle correctly.");
@@ -125,6 +131,12 @@ namespace SFM
             {
                 return new Onigiri.FW.SetCover(path);
             }
+            else if (index==8)
+            {
+                double alpha = GetValue(args, "-p", 0.75);
+                double coeff = GetValue(args, "-c", 10.0);
+                return new Onigiri.FW.SetCoverConcave(path, alpha, coeff);
+            }
             else
             {
                 Console.WriteLine("Please set the index of oracle correctly.");
@@ -146,9 +158,9 @@ namespace SFM
             return index;
         }
 
-        private static double GetValue(string[] args, string key)
+        private static double GetValue(string[] args, string key,double defalutValue)
         {
-            var value = 1e-9;
+            var value = defalutValue;
             for (int i = 0; i < args.Length; i++)
             {
                 double cur = 0;
