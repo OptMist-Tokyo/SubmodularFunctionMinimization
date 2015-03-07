@@ -80,7 +80,7 @@ namespace Onigiri.TestFW
 
                             if (algoName.ToString()=="FW")
                             {
-                                var algo = new Onigiri.FW.FW();
+                                var algo = new Onigiri.FW.FWBinary();
                                 algo.Minimization(oracle);
                                 //CheckResult(algo.MinimumValue, n, k, o,algo.Minimizer);
                                 OutputResult(path, oracle, algo);
@@ -125,7 +125,7 @@ namespace Onigiri.TestFW
             return MakeString(content);
         }
 
-        private void OutputResult(string path, SubmodularOracle oracle, FW.FW algo)
+        private void OutputResult(string path, SubmodularOracle oracle, FW.FWBinary algo)
         {
             StreamWriter streamWriter = new StreamWriter(path, true);
             var res = new object[]{
@@ -281,7 +281,7 @@ namespace Onigiri.TestFW
                             GC.Collect();
                             GC.WaitForPendingFinalizers();
                             var oracle = GetOracle(oracleName.ToString(), n, k, p, coeff);
-                            var algo = new Onigiri.FW.FW();
+                            var algo = new Onigiri.FW.FWBinary();
                             algo.Minimization(oracle);
                             sum += algo.ExecutionTime;
                             //sw = new StreamWriter(path, true);

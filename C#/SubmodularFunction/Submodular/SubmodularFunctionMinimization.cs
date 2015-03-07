@@ -142,7 +142,7 @@ namespace Onigiri.Submodular
 
         protected List<int[]> GetFirstTrivialOrders()
         {
-            List<int[]> list = new List<int[]>();
+            var list = new List<int[]>();
             list.Add(Enumerable.Range(0, N).ToArray());
             return list;
         }

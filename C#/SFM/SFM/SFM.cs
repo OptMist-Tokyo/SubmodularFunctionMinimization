@@ -17,15 +17,40 @@ namespace SFM
 
         public void Solve(string[] args)
         {
-            var sfm = GetAlgorithm(args);
-            var oracle = GetOracle(args);
-            if (sfm==null||oracle==null)
+            var index = GetIndex(args, "-a");
+            double error = GetValue(args, "-e");
+            var path = GetPath(args, "-r");
+            if (index<=7)
+            {
+                ExecuteCombinatorialAlgorithm(args, path,error);
+            }
+            if (index>7)
+            {
+                ExecuteFWAlgorithm(args, path);
+            }
+        }
+
+        private void ExecuteFWAlgorithm(string[] args, string path)
+        {
+            var fw = GetFWAlgorithm(args);
+            var oracle = GetFWOracle(args);
+            if (fw == null || oracle == null)
             {
                 return;
             }
-            double error = GetValue(args, "-e");
-            var res = sfm.Minimization(oracle);
-            var path = GetPath(args,"-r");
+             fw.Minimization(oracle);
+             fw.Output(path,oracle, false);
+        }
+
+        private void ExecuteCombinatorialAlgorithm(string[] args, string path,double error)
+        {
+            var sfm = GetAlgorithm(args);
+            var oracle = GetOracle(args);
+            if (sfm == null || oracle == null)
+            {
+                return;
+            }
+            var res = sfm.Minimization(oracle,error,error);
             res.Output(path, false);
         }
 
@@ -69,6 +94,36 @@ namespace SFM
             else if (index==7)
             {
                 return new BinaryMatroid(path);
+            }
+            else
+            {
+                Console.WriteLine("Please set the index of oracle correctly.");
+                return null;
+            }
+
+        }
+
+
+        private Onigiri.FW.SubmodularOracle GetFWOracle(string[] args)
+        {
+            var index = GetIndex(args, "-o");
+            var path = GetPath(args, "-f");
+            if (path == null)
+            {
+                Console.WriteLine("Please set the file path correctly.");
+                return null;
+            }
+            if (index == 0)
+            {
+                return new Onigiri.FW.UndirectedCut(path);
+            }
+            else if (index == 1)
+            {
+                return new Onigiri.FW.DirectedCut(path);
+            }
+            else if (index == 5)
+            {
+                return new Onigiri.FW.SetCover(path);
             }
             else
             {
@@ -154,10 +209,6 @@ namespace SFM
             {
                 return new IOStrongly();
             }
-            else if (index==8)
-            {
-                return new FW();
-            }
             else
             {
                 Console.WriteLine("Please set the index of algorithm correctly.");
@@ -166,6 +217,29 @@ namespace SFM
 
         }
 
+
+        private Onigiri.FW.FW GetFWAlgorithm(string[] args)
+        {
+            var index = GetIndex(args, "-a");
+            if (index == 8)
+            {
+                return new Onigiri.FW.FWOriginal();
+            }
+            else if (index == 9)
+            {
+                return new Onigiri.FW.FWContract();
+            }
+            else if (index == 10)
+            {
+                return new Onigiri.FW.FWBinary();
+            }
+            else
+            {
+                Console.WriteLine("Please set the index of algorithm correctly.");
+                return null;
+            }
+
+        }
 
     }
 }

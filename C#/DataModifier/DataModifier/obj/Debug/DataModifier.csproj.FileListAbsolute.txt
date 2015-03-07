@@ -1,6 +1,0 @@
-C:\Users\onigiri\Dropbox\SubmodularFunction\C#\DataModifier\DataModifier\bin\Debug\DataModifier.exe.config
-C:\Users\onigiri\Dropbox\SubmodularFunction\C#\DataModifier\DataModifier\bin\Debug\DataModifier.exe
-C:\Users\onigiri\Dropbox\SubmodularFunction\C#\DataModifier\DataModifier\bin\Debug\DataModifier.pdb
-C:\Users\onigiri\Dropbox\SubmodularFunction\C#\DataModifier\DataModifier\obj\Debug\DataModifier.csprojResolveAssemblyReference.cache
-C:\Users\onigiri\Dropbox\SubmodularFunction\C#\DataModifier\DataModifier\obj\Debug\DataModifier.exe
-C:\Users\onigiri\Dropbox\SubmodularFunction\C#\DataModifier\DataModifier\obj\Debug\DataModifier.pdb

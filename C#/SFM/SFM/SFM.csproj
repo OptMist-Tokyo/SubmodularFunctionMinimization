@@ -39,6 +39,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\SubmodularFunction\Submodular\bin\Release\Onigiri.Algorithm.dll</HintPath>
     </Reference>
+    <Reference Include="Onigiri.FW">
+      <HintPath>..\..\FW\FW\bin\Release\Onigiri.FW.dll</HintPath>
+    </Reference>
     <Reference Include="Onigiri.Submodular, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\SubmodularFunction\Submodular\bin\Release\Onigiri.Submodular.dll</HintPath>

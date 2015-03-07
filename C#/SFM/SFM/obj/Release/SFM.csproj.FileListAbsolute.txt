@@ -17,3 +17,5 @@ C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SFM\SFM\bin\Release\Onigiri.Submo
 C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SFM\SFM\obj\Release\SFM.csprojResolveAssemblyReference.cache
 C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SFM\SFM\bin\Release\Onigiri.Algorithm.dll
 C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SFM\SFM\bin\Release\Onigiri.Submodular.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SFM\SFM\bin\Release\Onigiri.FW.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\SFM\SFM\bin\Release\Onigiri.FW.pdb

@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Onigiri.FW
 {
-    public class FWOriginal
+    public class FWOriginal : FW
     {
-        const double AbsEps = 1e-12;
-        const double RelativeEps = 1e-10;
+        double AbsEps = 1e-10;
+        double RelativeEps = 1e-10;
         const int All = 0;
 
         double currentNorm;
@@ -23,34 +23,17 @@ namespace Onigiri.FW
         int[] smallRemainder;
         int[] cnt;
 
-        Stopwatch sw;
-
-        public long ExecutionTime
-        {
-            get { return sw.ElapsedMilliseconds; }
-        }
-
         public long Iteration
         {
             get;
             private set;
         }
 
-        public string Minimizer
-        {
-            get;
-            private set;
-        }
 
-        public double MinimumValue
+        public override void Minimization(SubmodularOracle oracle,double absEps = 1e-10,double relativeEps = 1e-10)
         {
-            get;
-            private set;
-        }
-
-
-        public void Minimization(SubmodularOracle oracle)
-        {
+            this.AbsEps = absEps;
+            this.RelativeEps = relativeEps;
             Initialize(oracle);
             while (true)
             {

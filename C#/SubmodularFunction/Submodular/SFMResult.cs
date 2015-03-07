@@ -22,7 +22,7 @@ namespace Onigiri.Submodular
 
         string[] labels = new string[]{"N", 
             "reduced N", 
-            "Iteration", 
+//            "Iteration", 
             "Execurtion Time", 
             "Oracle Time",
             "Reduction Time", 
@@ -77,13 +77,13 @@ namespace Onigiri.Submodular
             }//
             OutputVariable("N", BaseN, streamWriter);
             OutputVariable("reduced N", N, streamWriter);
-            OutputVariable("Iteration", Iteration, streamWriter);
+            //OutputVariable("Iteration", Iteration, streamWriter);
             OutputVariable("Execurtion Time", ExecutionTime, streamWriter);
             OutputVariable("Oracle Time", OracleTime, streamWriter);
             OutputVariable("Reduction Time", ReductionTime, streamWriter);
             OutputVariable("Oracle Call", OracleCall, streamWriter);
             OutputVariable("Base Call", BaseCall, streamWriter);
-            OutputVariable("Reduction Call", ReductionTime, streamWriter);
+            OutputVariable("Reduction Call", ReductionCall, streamWriter);
             OutputVariable("Minimum Value", MinimumValue, streamWriter);
             OutputVariable("Minimizer", Minimizer, streamWriter);
             OutputVariable("Dual Value", DualValue, streamWriter,false);

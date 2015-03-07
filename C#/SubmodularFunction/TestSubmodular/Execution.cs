@@ -15,16 +15,16 @@ namespace Onigiri.TestSubmodular
     {
         internal enum Oracles
         {
-//            Modular,
+            Modular,
             UndirectedCut,
-            //DirectedCut,
-            //ConnectedDetachment,
-            //FacilityLocation,
-            //GraphicMatroid,
-            //SetCover,
+            DirectedCut,
+            ConnectedDetachment,
+            FacilityLocation,
+            GraphicMatroid,
+            SetCover,
             //SetCoverConcave,
-            //NonPositiveSymmetricMatrixSummation,
-            BinaryMatroid,
+            NonPositiveSymmetricMatrixSummation,
+            //BinaryMatroid,
         };
 
         internal enum Algorithms
@@ -32,15 +32,15 @@ namespace Onigiri.TestSubmodular
             //BruteForce,
 
 
-            //IFFWeakly,
-            //IFFStrongly,
+            IFFWeakly,
+            IFFStrongly,
             FW,
-            //IOWeakly,
-            //IOStrongly,
-            //Orlin,
-            //HybridWeakly,
-            //HybridStrongly,
-            //Schrijver,
+            IOWeakly,
+            IOStrongly,
+            Orlin,
+            HybridWeakly,
+            HybridStrongly,
+            Schrijver,
 
 
         };
@@ -49,8 +49,8 @@ namespace Onigiri.TestSubmodular
         //const int nMin =128;
         //const int nMax = 200;
 
-        const int nMin = 16;
-        const int nMax = 32;
+        const int nMin = 1;
+        const int nMax = 20;
         const int kMin = 0;
         const int kMax = 25;
         bool pow = 1==1;

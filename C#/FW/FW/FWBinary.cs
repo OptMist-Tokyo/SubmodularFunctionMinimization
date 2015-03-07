@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Onigiri.FW
 {
-    public class FW
+    public class FWBinary : FW
     {
-        const double AbsEps = 1e-12;
-        const double RelativeEps = 1e-10;
+         double AbsEps = 1e-10;
+         double RelativeEps = 1e-10;
         const int All = 0;
         const int Head = 1;
         const int Tail = 2;
@@ -40,12 +40,6 @@ namespace Onigiri.FW
         int[][] data;
         int cutIteration;
 
-        Stopwatch sw;
-
-        public long ExecutionTime
-        {
-            get { return sw.ElapsedMilliseconds; }
-        }
 
         public long Iteration
         {
@@ -53,21 +47,11 @@ namespace Onigiri.FW
             private set;
         }
 
-        public string Minimizer
-        {
-            get;
-            private set;
-        }
 
-        public double MinimumValue
+        public override void Minimization(SubmodularOracle oracle,double absEps = 1e-10,double relativeEps = 1e-10)
         {
-            get;
-            private set;
-        }
-
-
-        public void Minimization(SubmodularOracle oracle)
-        {
+            this.AbsEps = absEps;
+            this.RelativeEps = relativeEps;
             Initialize(oracle);
             int smallReptation = Math.Max(10, (int)(oracle.N * RepRatio));
             bool fromScrach = true;
