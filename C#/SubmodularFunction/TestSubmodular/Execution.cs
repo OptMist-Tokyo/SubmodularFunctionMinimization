@@ -15,15 +15,15 @@ namespace Onigiri.TestSubmodular
     {
         internal enum Oracles
         {
-            Modular,
-            UndirectedCut,
-            DirectedCut,
-            ConnectedDetachment,
-            FacilityLocation,
-            GraphicMatroid,
-            SetCover,
-            //SetCoverConcave,
-            NonPositiveSymmetricMatrixSummation,
+            //Modular,
+            //UndirectedCut,
+            //DirectedCut,
+            //ConnectedDetachment,
+            //FacilityLocation,
+            //GraphicMatroid,
+            //SetCover,
+            SetCoverConcave,
+            //NonPositiveSymmetricMatrixSummation,
             //BinaryMatroid,
         };
 
@@ -32,15 +32,15 @@ namespace Onigiri.TestSubmodular
             //BruteForce,
 
 
-            IFFWeakly,
-            IFFStrongly,
+            //IFFWeakly,
+            //IFFStrongly,
             FW,
-            IOWeakly,
-            IOStrongly,
-            Orlin,
-            HybridWeakly,
-            HybridStrongly,
-            Schrijver,
+            //IOWeakly,
+            //IOStrongly,
+            //Orlin,
+            //HybridWeakly,
+            //HybridStrongly,
+            //Schrijver,
 
 
         };
@@ -50,9 +50,9 @@ namespace Onigiri.TestSubmodular
         //const int nMax = 200;
 
         const int nMin = 1;
-        const int nMax = 20;
+        const int nMax = 1050;
         const int kMin = 0;
-        const int kMax = 25;
+        const int kMax = 50;
         bool pow = 1==1;
 
         [TestMethod]
@@ -73,7 +73,7 @@ namespace Onigiri.TestSubmodular
                     {
                         for (int k = kMin; k < kMax; k++)
                         {
-                            //if (n < 64 || k < 13)
+                            //if (n>=4&& k >= 4)
                             //{
                             //    continue;
                             //}//if
@@ -84,11 +84,18 @@ namespace Onigiri.TestSubmodular
                             GC.WaitForPendingFinalizers();
                             //var oracle = new ReducedOracle(GetOracle(oracleName.ToString(), n, k));
                             //var oracle = new ReducedOracle(GetOracle(oracleName.ToString(), n, k),false);
-                            var oracle = new ReducedOracle(GetOracle(oracleName.ToString(), n, 0), false);
+                            var oracle = new ReducedOracle(GetOracle(oracleName.ToString(), n, k), false);
                             //var oracle = GetOracle(oracleName.ToString(), n, k, 0.75, 10);
                             var algo = GetAlgo(algoName.ToString());
                             var result = algo.Minimization(oracle);
                             result.Output(path,false);
+
+
+                            //var writer = new StreamWriter(@"E:\Submodular\AnswersSetCoverConcave\" + n.ToString() + "_" + k.ToString());
+                            //writer.WriteLine(result.Minimizer);
+                            //writer.WriteLine(result.MinimumValue);
+                            //writer.Close();
+                            
                             //CheckResult(result, n, k, oracleName.ToString());
                         }//for k
                     }//for n

@@ -1,0 +1,26 @@
+﻿2015/03/17 9:26:15 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunctionOld\TestSubmodular\TestSubmodular.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\SubmodularFunction /I"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\UnitTest\include" /Z7 /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\TestSubmodular.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /FC /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\SubmodularFunction /I"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\UnitTest\include" /Z7 /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\TestSubmodular.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /FC /errorReport:prompt Execution.cpp FW.cpp GetBase.cpp GetBaseOverride.cpp Hybrid.cpp IsSubmodularOverride.cpp IsSubmodular.cpp
+         Execution.cpp
+     1>c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunctionold\testsubmodular\execution.cpp(4): fatal error C1083: include ファイルを開けません。'Submodular.h': No such file or directory
+         FW.cpp
+     1>c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunctionold\testsubmodular\fw.h(4): fatal error C1083: include ファイルを開けません。'Submodular.h': No such file or directory
+         GetBase.cpp
+     1>c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunctionold\testsubmodular\getbase.cpp(4): fatal error C1083: include ファイルを開けません。'Submodular.h': No such file or directory
+         GetBaseOverride.cpp
+     1>c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunctionold\testsubmodular\getbaseoverride.cpp(4): fatal error C1083: include ファイルを開けません。'Submodular.h': No such file or directory
+         Hybrid.cpp
+     1>c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunctionold\testsubmodular\hybrid.h(4): fatal error C1083: include ファイルを開けません。'Submodular.h': No such file or directory
+         IsSubmodularOverride.cpp
+     1>c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunctionold\testsubmodular\issubmodularoverride.cpp(4): fatal error C1083: include ファイルを開けません。'Submodular.h': No such file or directory
+         IsSubmodular.cpp
+     1>c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunctionold\testsubmodular\issubmodular.cpp(4): fatal error C1083: include ファイルを開けません。'Submodular.h': No such file or directory
+         コードを生成中...
+     1>プロジェクト "C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunctionOld\TestSubmodular\TestSubmodular.vcxproj" (Build ターゲット) のビルドが終了しました -- 失敗。
+
+ビルドに失敗しました。
+
+経過時間 00:00:00.67

@@ -1,0 +1,19 @@
+﻿2015/03/28 21:30:21 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\UnitTest1\UnitTest1.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\SubmodularFunction /I"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\UnitTest\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\UnitTest1.pch" /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /FC /errorReport:prompt unittest1.cpp
+         unittest1.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\UnitTest1.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\UnitTest\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\UnitTest1.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\UnitTest1.lib" /MACHINE:X86 /SAFESEH /DLL Release\stdafx.obj
+         Release\unittest1.obj
+         C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\SubmodularFunction.lib
+     1>LINK : warning LNK4075: /INCREMENTAL は /LTCG の指定によって無視されます。
+            ライブラリ C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\UnitTest1.lib とオブジェクト C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\UnitTest1.exp を作成中
+         コード生成しています。
+         コード生成が終了しました。
+         UnitTest1.vcxproj -> C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\UnitTest1.dll
+     1>プロジェクト "C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\UnitTest1\UnitTest1.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:00.71

@@ -1,27 +1,34 @@
-﻿2014/10/14 14:00:45 にビルドを開始しました。
+﻿2015/03/28 21:30:04 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\SubmodularFunction\SubmodularFunction.vcxproj" (Build ターゲット)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D SUBMODULARFUNCTION_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt SetCoverConcave.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D SUBMODULARFUNCTION_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\SubmodularFunction.pch" /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt FW.cpp SetCoverConcave.cpp
+         FW.cpp
+     1>FW.cpp(18): warning C4273: 'Onigiri::FW::FW' : dll リンクが一貫していません。
+                 c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunction\submodularfunction\SubmodularFunction.h(104) : '{ctor}' の前の定義を確認してください
+     1>FW.cpp(22): warning C4273: 'Onigiri::FW::~FW' : dll リンクが一貫していません。
+                 c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunction\submodularfunction\SubmodularFunction.h(105) : '{dtor}' の前の定義を確認してください
+     1>FW.cpp(718): warning C4273: 'Onigiri::FW::Minimization' : dll リンクが一貫していません。
+                 c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunction\submodularfunction\SubmodularFunction.h(106) : 'Minimization' の前の定義を確認してください
          SetCoverConcave.cpp
+     1>SetCoverConcave.cpp(11): warning C4273: 'Onigiri::SetCoverConcave::SetCoverConcave' : dll リンクが一貫していません。
+                 c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunction\submodularfunction\SubmodularFunction.h(62) : '{ctor}' の前の定義を確認してください
+     1>SetCoverConcave.cpp(49): warning C4273: 'Onigiri::SetCoverConcave::~SetCoverConcave' : dll リンクが一貫していません。
+                 c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunction\submodularfunction\SubmodularFunction.h(63) : '{dtor}' の前の定義を確認してください
+     1>SetCoverConcave.cpp(64): warning C4273: 'Onigiri::SetCoverConcave::CalcBase' : dll リンクが一貫していません。
+                 c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunction\submodularfunction\SubmodularFunction.h(64) : 'CalcBase' の前の定義を確認してください
+     1>SetCoverConcave.cpp(92): warning C4273: 'Onigiri::SetCoverConcave::Contract' : dll リンクが一貫していません。
+                 c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunction\submodularfunction\SubmodularFunction.h(66) : 'Contract' の前の定義を確認してください
+     1>SetCoverConcave.cpp(124): warning C4273: 'Onigiri::SetCoverConcave::Delete' : dll リンクが一貫していません。
+                 c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunction\submodularfunction\SubmodularFunction.h(65) : 'Delete' の前の定義を確認してください
+     1>SetCoverConcave.cpp(143): warning C4273: 'Onigiri::SetCoverConcave::Copy' : dll リンクが一貫していません。
+                 c:\users\onigiri\dropbox\submodularfunction\c++\submodularfunction\submodularfunction\SubmodularFunction.h(67) : 'Copy' の前の定義を確認してください
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\SubmodularFunction.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\SubmodularFunction.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\SubmodularFunction.lib" /MACHINE:X86 /SAFESEH /DLL Release\BinaryMatrixRank.obj
-         Release\BruteForce.obj
-         Release\ConnectedDetachment.obj
-         Release\Converter.obj
-         Release\Cut.obj
-         Release\DirectedCut.obj
-         Release\FacilityLocation.obj
-         Release\GraphicMatroid.obj
-         Release\Manual.obj
-         Release\Modular.obj
-         Release\NonPositiveSymmetricMatrixSummation.obj
-         Release\SetCover.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\SubmodularFunction.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\SubmodularFunction.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\SubmodularFunction.lib" /MACHINE:X86 /SAFESEH /DLL Release\Cut.obj
+         Release\dllmain.obj
+         Release\FW.obj
          Release\SetCoverConcave.obj
-         Release\SFMResult.obj
-         Release\SubmodularFunctionMinimization.obj
+         Release\stdafx.obj
          Release\SubmodularOracle.obj
-         Release\UndirectedCut.obj
-         Release\UnionFind.obj
             ライブラリ C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\SubmodularFunction.lib とオブジェクト C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunction\Release\SubmodularFunction.exp を作成中
          コード生成しています。
          コード生成が終了しました。
@@ -30,4 +37,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:01.46
+経過時間 00:00:01.61

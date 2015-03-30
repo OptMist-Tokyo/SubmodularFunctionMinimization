@@ -1,0 +1,50 @@
+﻿2015/03/17 9:26:05 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunctionOld\SubmodularFunction\SubmodularFunction.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SUBMODULARFUNCTION_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt BinaryMatrixRank.cpp BruteForce.cpp ConnectedDetachment.cpp Converter.cpp Cut.cpp DirectedCut.cpp FacilityLocation.cpp GraphicMatroid.cpp Manual.cpp Modular.cpp NonPositiveSymmetricMatrixSummation.cpp SetCover.cpp SetCoverConcave.cpp SFMResult.cpp SubmodularFunctionMinimization.cpp SubmodularOracle.cpp UndirectedCut.cpp UnionFind.cpp
+         UnionFind.cpp
+         UndirectedCut.cpp
+         SubmodularOracle.cpp
+         SubmodularFunctionMinimization.cpp
+         SFMResult.cpp
+         SetCoverConcave.cpp
+         SetCover.cpp
+         NonPositiveSymmetricMatrixSummation.cpp
+         Modular.cpp
+         Manual.cpp
+         GraphicMatroid.cpp
+         FacilityLocation.cpp
+         DirectedCut.cpp
+         Cut.cpp
+         Converter.cpp
+         ConnectedDetachment.cpp
+         BruteForce.cpp
+         BinaryMatrixRank.cpp
+         コードを生成中...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunctionOld\Debug\SubmodularFunction.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunctionOld\Debug\SubmodularFunction.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunctionOld\Debug\SubmodularFunction.lib" /MACHINE:X86 /DLL Debug\BinaryMatrixRank.obj
+         Debug\BruteForce.obj
+         Debug\ConnectedDetachment.obj
+         Debug\Converter.obj
+         Debug\Cut.obj
+         Debug\DirectedCut.obj
+         Debug\FacilityLocation.obj
+         Debug\GraphicMatroid.obj
+         Debug\Manual.obj
+         Debug\Modular.obj
+         Debug\NonPositiveSymmetricMatrixSummation.obj
+         Debug\SetCover.obj
+         Debug\SetCoverConcave.obj
+         Debug\SFMResult.obj
+         Debug\SubmodularFunctionMinimization.obj
+         Debug\SubmodularOracle.obj
+         Debug\UndirectedCut.obj
+         Debug\UnionFind.obj
+         LINK : 前回のインクリメンタル リンクで C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunctionOld\Debug\SubmodularFunction.dll が見つからなかったか、ビルドされませんでした。フル リンクを行います。
+            ライブラリ C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunctionOld\Debug\SubmodularFunction.lib とオブジェクト C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunctionOld\Debug\SubmodularFunction.exp を作成中
+         SubmodularFunction.vcxproj -> C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunctionOld\Debug\SubmodularFunction.dll
+     1>プロジェクト "C:\Users\onigiri\Dropbox\SubmodularFunction\C++\SubmodularFunctionOld\SubmodularFunction\SubmodularFunction.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:10.16
