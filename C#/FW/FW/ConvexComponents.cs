@@ -172,7 +172,7 @@ namespace Onigiri.FW
             {
                 components[0].Lambda = 1.0;
                 //for (int i = 1; i < components.Length; i++)
-                for (int i = 1; i < Count; i++)
+                for (int i = 1; i < components.Count; i++)
                 {
                     components[i].Lambda = 0;
                 }

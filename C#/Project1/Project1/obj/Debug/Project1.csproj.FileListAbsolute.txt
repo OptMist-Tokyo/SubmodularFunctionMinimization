@@ -1,0 +1,12 @@
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project1\Project1\bin\Debug\Project1.exe.config
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project1\Project1\bin\Debug\Project1.exe
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project1\Project1\bin\Debug\Project1.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project1\Project1\bin\Debug\Onigiri.Algorithm.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project1\Project1\bin\Debug\Onigiri.Submodular.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project1\Project1\bin\Debug\TestSubmodular.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project1\Project1\bin\Debug\Onigiri.Algorithm.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project1\Project1\bin\Debug\Onigiri.Submodular.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project1\Project1\bin\Debug\TestSubmodular.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project1\Project1\obj\Debug\Project1.csprojResolveAssemblyReference.cache
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project1\Project1\obj\Debug\Project1.exe
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project1\Project1\obj\Debug\Project1.pdb

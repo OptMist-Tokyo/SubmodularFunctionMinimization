@@ -19,3 +19,4 @@
 \contentsline {section}{\numberline {10}Binary Matrix Rank}{14}{section.10}
 \contentsline {section}{\numberline {11}Negative Symmetric Matrix Summation}{15}{section.11}
 \contentsline {section}{\numberline {12}Set Cover}{16}{section.12}
+\contentsline {section}{\numberline {13}Set Cover Concave}{17}{section.13}

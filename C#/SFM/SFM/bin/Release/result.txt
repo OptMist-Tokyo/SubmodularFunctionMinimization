@@ -1,0 +1,2 @@
+N	reduced N	Execurtion Time	Oracle Time	Reduction Time	Oracle Call	Base Call	Reduction Call	Minimum Value	Minimizer	Dual Value
+32	32	12	0	0	1	8	0	-6024708	01101000110110001010111000110101	-6024708

@@ -20,13 +20,18 @@ namespace SFM
             var index = GetIndex(args, "-a");
             double error = GetValue(args, "-e",1e-10);
             var path = GetPath(args, "-r");
-            if (index<=7)
+            if (index < AlgorithmSeparator)
             {
                 ExecuteCombinatorialAlgorithm(args, path,error);
             }
-            if (index>7)
+            else if (index >= AlgorithmSeparator)
             {
                 ExecuteFWAlgorithm(args, path);
+            }
+            else
+            {
+                Console.WriteLine("Please set the index of algorithm correctly.");
+                return;
             }
         }
 
@@ -63,39 +68,39 @@ namespace SFM
                 Console.WriteLine("Please set the file path correctly.");
                 return null;
             }
-            if (index==0)
+            if (index==(int)Oracles.UndirectedCut)
             {
                 return new UndirectedCut(path);
             }
-            else if (index==1)
+            else if (index==(int)Oracles.DirectedCut)
             {
                 return new DirectedCut(path);
             }
-            else if (index==2)
+            else if (index==(int)Oracles.ConnectedDetachment)
             {
                 return new ConnectedDetachment(path);
             }
-            else if (index==3)
+            else if (index==(int)Oracles.FacilityLocation)
             {
                 return new FacilityLocation(path);
             }
-            else if (index==4)
+            else if (index==(int)Oracles.GraphicMatroid)
             {
                 return new GraphicMatroid(path);
             }
-            else if (index==5)
+            else if (index==(int)Oracles.SetCover)
             {
                 return new SetCover(path);
             }
-            else if (index==6)
+            else if (index==(int)Oracles.NonPositiveSymmetricMatrixSummation)
             {
                 return new NonPositiveSymmetricMatrixSummation(path);
             }
-            else if (index==7)
+            else if (index==(int)Oracles.BinaryMatroid)
             {
                 return new BinaryMatroid(path);
             }
-            else if (index==8)
+            else if (index==(int)Oracles.SetCoverConcave)
             {
                 double alpha = GetValue( args,  "-p", 0.75);
                 double c = GetValue(args, "-c", 10.0);
@@ -119,19 +124,19 @@ namespace SFM
                 Console.WriteLine("Please set the file path correctly.");
                 return null;
             }
-            if (index == 0)
+            if (index == (int)Oracles.UndirectedCut)
             {
                 return new Onigiri.FW.UndirectedCut(path);
             }
-            else if (index == 1)
+            else if (index == (int)Oracles.DirectedCut)
             {
                 return new Onigiri.FW.DirectedCut(path);
             }
-            else if (index == 5)
+            else if (index == (int)Oracles.SetCover)
             {
                 return new Onigiri.FW.SetCover(path);
             }
-            else if (index==8)
+            else if (index==(int)Oracles.SetCoverConcave)
             {
                 double alpha = GetValue(args, "-p", 0.75);
                 double coeff = GetValue(args, "-c", 10.0);
@@ -189,37 +194,41 @@ namespace SFM
         private SubmodularFunctionMinimization GetAlgorithm(string[] args)
         {
             var index = GetIndex(args, "-a");
-            if (index==0)
+            if (index==(int)Algorithms.IFFWeakly)
             {
                 return new IFFWeakly();
             }
-            else if (index==1)
+            else if (index==(int)Algorithms.IFFStrongly)
             {
                 return new IFFStrongly();
             }
-            else if (index==2)
+            else if (index==(int)Algorithms.Schrijver)
             {
                 return new Schrijver();
             }
-            else if (index==3)
+            else if (index==(int)Algorithms.HybridWeakly)
             {
                 return new HybridWeakly();
             }
-            else if (index==4)
+            else if (index==(int)Algorithms.HybridStrongly)
             {
                 return new HybridStrongly();
             }
-            else if (index==5)
+            else if (index==(int)Algorithms.Orlin)
             {
                 return new Orlin();
             }
-            else if (index==6)
+            else if (index==(int)Algorithms.IOWeakly)
             {
                 return new IOWeakly();
             }
-            else if (index==7)
+            else if (index==(int)Algorithms.IOStrongly)
             {
                 return new IOStrongly();
+            }
+            else if (index == (int)Algorithms.FW)
+            {
+                return new FW();
             }
             else
             {
@@ -233,15 +242,15 @@ namespace SFM
         private Onigiri.FW.FW GetFWAlgorithm(string[] args)
         {
             var index = GetIndex(args, "-a");
-            if (index == 8)
+            if (index == (int)FWAlgorithms.FWOriginal)
             {
                 return new Onigiri.FW.FWOriginal();
             }
-            else if (index == 9)
+            else if (index == (int)FWAlgorithms.FWContract)
             {
                 return new Onigiri.FW.FWContract();
             }
-            else if (index == 10)
+            else if (index == (int)FWAlgorithms.FWBinary)
             {
                 return new Onigiri.FW.FWBinary();
             }
@@ -252,6 +261,12 @@ namespace SFM
             }
 
         }
+
+
+        public static int AlgorithmSeparator = 100;
+        enum Algorithms { IFFWeakly = 0, IFFStrongly, Schrijver, HybridWeakly, HybridStrongly, Orlin, IOWeakly, IOStrongly, FW };
+        enum FWAlgorithms { FWOriginal = AlgorithmSeparator, FWContract, FWBinary };
+        enum Oracles { UndirectedCut = 0, DirectedCut,ConnectedDetachment, FacilityLocation, GraphicMatroid,SetCover,NonPositiveSymmetricMatrixSummation,BinaryMatroid, SetCoverConcave};
 
     }
 }

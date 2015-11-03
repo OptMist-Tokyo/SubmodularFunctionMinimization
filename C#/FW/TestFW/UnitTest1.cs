@@ -31,17 +31,17 @@ namespace Onigiri.TestFW
 
         internal enum Algorithms
         {
-            FW,
-            //FWContract,
+           FW,
+       //    FWContract,
             //FWOriginal,
         }
 
         //const int nMin = 1;
         //const int nMax = 20;
         const int nMin = 1;
-        const int nMax =8192;
+        const int nMax =1050;
         const int kMin = 0;
-        const int kMax = 25;
+        const int kMax = 50;
         bool pow = 1 == 1;
 
         [TestMethod]
@@ -65,10 +65,10 @@ namespace Onigiri.TestFW
                     {
                         for (int k = kMin; k < kMax; k++)
                         {
-                            //if (n < 4 || k != 15)
-                            //{
-                            //    continue;
-                            //}//if
+                            if (n < 128 || k < 1 )
+                            {
+                                continue;
+                            }
 
                             GC.Collect();
                             GC.WaitForPendingFinalizers();
@@ -76,7 +76,7 @@ namespace Onigiri.TestFW
                             GC.WaitForPendingFinalizers();
                             //var oracle = new ReducedOracle(GetOracle(oracleName.ToString(), n, k));
                             //var oracle = new ReducedOracle(GetOracle(oracleName.ToString(), n, k), false);
-                            var oracle = GetOracle(oracleName.ToString(), n, k, 0.9, 300);
+                            var oracle = GetOracle(oracleName.ToString(), n, k, 0.5, 100);
 
                             if (algoName.ToString()=="FW")
                             {
@@ -84,6 +84,7 @@ namespace Onigiri.TestFW
                                 algo.Minimization(oracle);
                                 //CheckResult(algo.MinimumValue, n, k, o,algo.Minimizer);
                                 OutputResult(path, oracle, algo);
+                                CheckAnswer(oracle.Minimizer,n,k,o);
                             }
                             else if (algoName.ToString() == "FWContract")
                             {
@@ -109,6 +110,22 @@ namespace Onigiri.TestFW
                 }//foreach algoName
             }//foreach item
         }
+
+        private void CheckAnswer(bool[] res, int n, int k, string oracleName)
+        {
+            var reader = new StreamReader(@"E:\Submodular\Answers" + oracleName.ToString()+"\\" + n.ToString() + "_" + k.ToString());
+            var ans = reader.ReadLine();
+            reader.Close();
+            var sb = new StringBuilder();
+            foreach (var item in res)
+            {
+                sb.Append((item ? "1" : "0"));
+            }
+            var writer = new StreamWriter(("E:\\Submodular\\res" + oracleName) + ".txt", !(n == 1&& k == 0));
+            writer.WriteLine(n + " " + k + " " + (ans == sb.ToString()));
+            writer.Close();
+        }
+
 
         private string Content()
         {

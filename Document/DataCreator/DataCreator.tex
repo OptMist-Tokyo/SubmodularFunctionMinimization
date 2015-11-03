@@ -537,10 +537,9 @@ $m_V$ be a modular function on $V$,
 $m_U$ be a non-negative modular function on $U$
 and $C$ be a constant.
 For all $X\subseteq V$,
-define $f(X):=m_V(X)+\varphi(N(X))$ is a submodular function.
+define $f(X):=m_V(X)+N(X)$ is a submodular function.
 Here, $N$ is a neighbor function, i.e.,
-for all $X\subseteq V$, $N(X):=\{u \in U \mid \exists v\in X~ \{ u,v\}\in E  \} $
-and $\varphi$ is a concave function.
+for all $X\subseteq V$, $N(X):=\{u \in U \mid \exists v\in X~ \{ u,v\}\in E  \} $.
 \exTab{Set Cover}
 
 \begin{itemize}
@@ -590,8 +589,16 @@ Therefore, the graph is expressed by an adjacency list.
 
 
 
+\section{Set Cover Concave}\label{setCoverConcaveSec}
+In the Section \ref{setCoverSec},
+redefine $f(X):=m_V(X)+\varphi(N(X))$,
+where $\varphi$ is a concave function.
+Then,
+$f$ is a submodular function as well.
+We set $\varphi(x):=C x^\alpha$ with parameters
+$C\leq 0$ and $0<\alpha <1$.
+We call this submodular function as set cover concave.
 
-\newpage
 
 
 

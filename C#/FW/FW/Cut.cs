@@ -141,6 +141,7 @@ namespace Onigiri.FW
 
         public override void Contract(List<int> reduceList)
         {
+            reduceList.Sort();
             foreach (var item in reduceList)
             {
                 int cur = remainder[item];

@@ -89,23 +89,39 @@ We can set a submodular function oracle by "-o" option.
 \item 5: Set Cover
 \item 6: Non Positive Symmetric Matrix Summation
 \item 7: Binary Matroid
+\item 8: Set Cover Concave
 \end{itemize}
 
 See "Document\\DataCreator\\DataCreator.pdf" for details.
+In order to use Set Cover Concave,
+we should also set parameter "-p" and "-c" as $\alpha$ and $c$ in the pdf file, respectively.
+Note that we can only use Undirected Cut, Directed Cut, Set Cover and Set Cover Concave
+when we use Fujishige-Wolfe type algorithm explained next section.
 
 \subsection{Submodular Functions}
 We can set an algorithm for submodular function minimization by "-a" option.
+("-a 8" and "-a 100" are logically the same algorithms, but implemented by slightly different way.)
 \begin{itemize}
-\item 0: Iwata-Fleischer-Fujishige weakly polynomial time algorithm
-\item 1: Iwata-Fleischer-Fujishige Strongly polynomial time algorithm
-\item 2: Schrijver's algorithm
-\item 3: Iwata's hybrid weakly polynomial time algorithm
-\item 4: Iwata's hybrid strongly polynomial time algorithm
-\item 5: Orlin's algorithm
-\item 6: Iwata-Orlin weakly polynomial time algorithm
-\item 7: Iwata-Orlin strongly polynomial time algorithm
-\item 8: Fujishige-Wolfe algorithm
+\item 0: Iwata-Fleischer-Fujishige weakly polynomial time algorithm in \cite{iwaStr}.
+\item 1: Iwata-Fleischer-Fujishige Strongly polynomial time algorithm in \cite{iwaStr}.
+\item 2: Schrijver's algorithm in \cite{schStr}.
+\item 3: Iwata's hybrid weakly polynomial time algorithm in \cite{iwaFast}.
+\item 4: Iwata's hybrid strongly polynomial time algorithm in \cite{iwaFast}.
+\item 5: Orlin's algorithm in \cite{orlFast}.
+\item 6: Iwata-Orlin weakly polynomial time algorithm in \cite{iwaSmpl}.
+\item 7: Iwata-Orlin strongly polynomial time algorithm in \cite{iwaSmpl}.
+\item 8: Fujishige-Wolfe algorithm without any reduction approach in \cite{fujWolfe}.\textsl{}
+\item 100: Fujishige-Wolfe algorithm without any reduction approach in \cite{fujWolfe}.
+\item 101: Fujishige-Wolfe algorithm with reduction in \cite{fujExp}
+\item 102: Fujishige-Wolfe algorithm improved by Kitamura Masashi.
 \end{itemize}
+Not that when we use weakly polynomial time algorithm,
+the program assume that submodular functions are integer-valued.
+Therefore,
+if we use a real-valued submodular function,
+the program may not obtain a correct answer.
+We can only use Undirected Cut, Directed Cut, Set Cover and Set Cover Concave
+when we use Fujishige-Wolfe type algorithm (8, 9, 10).
 
 \subsection{Input File}
 We can set the file for the input data by "-f" option.
@@ -125,7 +141,7 @@ it is possible for the program to take huge time.
 
 
 
-
+\bibliography{SFM.bib}
 
 
 \end{document} 

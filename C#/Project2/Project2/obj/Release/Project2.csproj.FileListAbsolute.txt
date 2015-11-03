@@ -1,0 +1,16 @@
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\bin\Release\Project2.exe.config
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\bin\Release\Project2.exe
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\bin\Release\Project2.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\bin\Release\Onigiri.Algorithm.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\bin\Release\Onigiri.Submodular.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\bin\Release\TestSubmodular.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\bin\Release\Onigiri.Algorithm.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\bin\Release\Onigiri.Submodular.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\bin\Release\TestSubmodular.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\obj\Release\Project2.csprojResolveAssemblyReference.cache
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\obj\Release\Project2.exe
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\obj\Release\Project2.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\bin\Release\Onigiri.FW.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\bin\Release\Onigiri.TestFW.dll
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\bin\Release\Onigiri.FW.pdb
+C:\Users\onigiri\Dropbox\SubmodularFunction\C#\Project2\Project2\bin\Release\Onigiri.TestFW.pdb

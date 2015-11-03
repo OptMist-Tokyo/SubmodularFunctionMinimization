@@ -19,6 +19,7 @@ namespace Onigiri.FW
         const double RepRatioSmall = 0.01;
         const double CutRatio = 0.35;
         const double CutRatioSmall = 0.20;
+        const int naiveSize = 100;
 
         double currentNorm;
         ConvexComponentsQR bigComponents;
@@ -57,7 +58,7 @@ namespace Onigiri.FW
             bool fromScrach = true;
             while (true)
             {
-                if (oracle.Count < 100)
+                if (oracle.Count < naiveSize)
                 //if(true)
                 {
                     CalcMinimumNormPoint(oracle, bigComponents, bigExtremeBase, bigX, All, true);
@@ -416,7 +417,7 @@ namespace Onigiri.FW
                 {
                     break;
                 }
-                ContractAndDelete(iteration,oracle, components, state, components.X, reorder, modifiedList);
+                Reduce(iteration,oracle, components, state, components.X, reorder, modifiedList);
                 double nextNorm = components.CalcSquareKernel(components.X);
                 if (currentNorm <= nextNorm)
                 {
@@ -437,7 +438,7 @@ namespace Onigiri.FW
             Iteration += iteration;
         }
 
-        private void ContractAndDelete(long iteration,SubmodularOracle oracle, ConvexComponents components, int state, double[] x,int[] reorder = null, List<int> modifiedList = null)
+        private void Reduce(long iteration,SubmodularOracle oracle, ConvexComponents components, int state, double[] x,int[] reorder = null, List<int> modifiedList = null)
         {
             data = components.GetData();
             int n = x.Length;
@@ -606,12 +607,12 @@ namespace Onigiri.FW
 
         private void HeuristicDelete(SubmodularOracle oracle, ConvexComponents components, int state, double[] x, int[] reorder,long iteration)
         {
-            if (iteration%cutIteration==cutIteration-1)
+            if (iteration % cutIteration == cutIteration - 1)
             {
                 int index = 0;
                 for (int i = 0; i < components.Count; i++)
                 {
-                    if (components.Lambdas[i]>components.Lambdas[index])
+                    if (components.Lambdas[i] > components.Lambdas[index])
                     {
                         index = i;
                     }
@@ -619,13 +620,13 @@ namespace Onigiri.FW
                 list.Clear();
                 for (int i = 0; i < components.Count; i++)
                 {
-                    if (i!=index)
+                    if (i != index)
                     {
                         list.Add(i);
                     }
                 }
                 hash.Clear();
-                int start = (int)(Math.Ceiling((1-CutRatioSmall)*x.Length));
+                int start = (int)(Math.Ceiling((1 - CutRatioSmall) * x.Length));
                 for (int i = start; i < x.Length; i++)
                 {
                     hash.Add(data[index][i]);
@@ -633,34 +634,36 @@ namespace Onigiri.FW
                 ExecuteDelete(oracle, components, state, reorder);
                 return;
             }
-
-            hash.Clear();
-            for (int i = 0; i < x.Length; i++)
+            else
             {
-                if (x[i] > 0)
+                hash.Clear();
+                for (int i = 0; i < x.Length; i++)
                 {
-                    hash.Add(i);
-                }
-            }
-            double sum = 0;
-            list.Clear();
-            int n = x.Length;
-            for (int i = 0; i < data.Length; i++)
-            {
-                for (int j = 0; j < hash.Count; j++)
-                {
-                    if (!hash.Contains(data[i][n - 1 - j]))
+                    if (x[i] > 0)
                     {
-                        sum += components.Lambdas[i];
-                        list.Add(i);
-                        break;
+                        hash.Add(i);
                     }
                 }
-            }
-            //if(sum<CutRatio)
-            if (list.Count < CutRatio * data.Length)
-            {
-                ExecuteDelete(oracle, components, state, reorder);
+                double sum = 0;
+                list.Clear();
+                int n = x.Length;
+                for (int i = 0; i < data.Length; i++)
+                {
+                    for (int j = 0; j < hash.Count; j++)
+                    {
+                        if (!hash.Contains(data[i][n - 1 - j]))
+                        {
+                            sum += components.Lambdas[i];
+                            list.Add(i);
+                            break;
+                        }
+                    }
+                }
+                //if(sum<CutRatio)
+                if (list.Count < CutRatio * data.Length)
+                {
+                    ExecuteDelete(oracle, components, state, reorder);
+                }
             }
         }
 

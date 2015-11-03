@@ -34,6 +34,18 @@ namespace Onigiri.FW
                 MinusByBWithOne(extremeBase, Q[Count]);
             }
             matrix[Count][Count] = Normalize(Q[Count]);
+            //for (int i = 0; i < Count - 1; i++)
+            //{
+            //    if (matrix[i][i] < matrix[i + 1][i + 1])
+            //    {
+            //        Console.WriteLine();
+            //    }
+            //}
+            //if (Count>=170)
+            //{
+            //    Console.WriteLine();
+            //}
+
             return matrix[Count][Count] >= Math.Abs(matrix[0][0]) * RelativeEps;
         }
 

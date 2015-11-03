@@ -5,10 +5,3 @@ C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\TestFW\bin\Release\Onigiri.FW.
 C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\TestFW\bin\Release\Onigiri.FW.pdb
 C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\TestFW\obj\Release\Onigiri.TestFW.dll
 C:\Users\onigiri\Dropbox\SubmodularFunction\C#\FW\TestFW\obj\Release\Onigiri.TestFW.pdb
-C:\Users\onigiri\Desktop\SubmodularFunctionMinimization\C#\FW\TestFW\bin\Release\Onigiri.TestFW.dll
-C:\Users\onigiri\Desktop\SubmodularFunctionMinimization\C#\FW\TestFW\bin\Release\Onigiri.TestFW.pdb
-C:\Users\onigiri\Desktop\SubmodularFunctionMinimization\C#\FW\TestFW\bin\Release\Onigiri.FW.dll
-C:\Users\onigiri\Desktop\SubmodularFunctionMinimization\C#\FW\TestFW\bin\Release\Onigiri.FW.pdb
-C:\Users\onigiri\Desktop\SubmodularFunctionMinimization\C#\FW\TestFW\obj\Release\TestFW.csprojResolveAssemblyReference.cache
-C:\Users\onigiri\Desktop\SubmodularFunctionMinimization\C#\FW\TestFW\obj\Release\Onigiri.TestFW.dll
-C:\Users\onigiri\Desktop\SubmodularFunctionMinimization\C#\FW\TestFW\obj\Release\Onigiri.TestFW.pdb

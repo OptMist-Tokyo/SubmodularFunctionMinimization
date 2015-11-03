@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.13 (TeX Live 2012/W32TeX) (format=pdflatex 2012.10.19)  23 FEB 2015 09:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.13 (TeX Live 2012/W32TeX) (format=pdflatex 2012.10.19)  3 NOV 2015 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -414,39 +414,37 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
- [3] (./SFM.bbl
+ [3] (./SFM.bbl [4])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 135.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
- (./SFM.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
+(./SFM.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 147.
 Package rerunfilecheck Info: File `SFM.out' has not changed.
 (rerunfilecheck)             Checksum: 720F5C32FA43323E04DC0A0ABF390021;359.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
  ) 
 Here is how much of TeX's memory you used:
- 6327 strings out of 493488
- 90054 string characters out of 6145477
- 174660 words of memory out of 3000000
- 9526 multiletter control sequences out of 15000+600000
- 20124 words of font info for 53 fonts, out of 8000000 for 9000
+ 6347 strings out of 493488
+ 90254 string characters out of 6145477
+ 175861 words of memory out of 3000000
+ 9535 multiletter control sequences out of 15000+600000
+ 22337 words of font info for 56 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 29i,6n,28p,237b,325s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 29i,6n,28p,237b,431s stack positions out of 5000i,500n,10000p,500000b,80000s
 {c:/w32tex/share/texmf/fonts/enc/dvips/base/8r.enc}<c:/w32tex/share/texmf/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb><c:/w32tex/share/texmf/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><c:/w32tex/share/texmf/fonts/type1/public/amsfonts/cm/cms
-y10.pfb><c:/w32tex/share/texmf/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/w32
-tex/share/texmf/fonts/type1/urw/times/utmb8a.pfb><c:/w32tex/share/texmf/fonts/t
-ype1/urw/times/utmr8a.pfb>
-Output written on SFM.pdf (4 pages, 60468 bytes).
+ts/type1/public/amsfonts/cm/cmmi10.pfb><c:/w32tex/share/texmf/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb><c:/w32tex/share/texmf/fonts/type1/public/amsfonts/cm/c
+mr7.pfb><c:/w32tex/share/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/w3
+2tex/share/texmf/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/w32tex/share/texm
+f/fonts/type1/urw/times/utmb8a.pfb><c:/w32tex/share/texmf/fonts/type1/urw/times
+/utmr8a.pfb><c:/w32tex/share/texmf/fonts/type1/urw/times/utmri8a.pfb>
+Output written on SFM.pdf (5 pages, 83982 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
+ 118 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
